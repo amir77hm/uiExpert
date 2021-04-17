@@ -1,0 +1,108 @@
+.portfolio {
+  background-color: #f8f8f8;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 7rem 0;
+
+    .details {
+      h3 {
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+      p {
+        font-family: "Roboto";
+        font-weight: 300;
+        color: #747474;
+        font-size: 1.3rem;
+        margin-bottom: 4rem;
+      }
+      .works {
+        &__item {
+          &:not(:last-child) {
+            margin-bottom: 2rem;
+          }
+        }
+
+        &__link {
+          font-family: "Roboto";
+          font-size: 1.5rem;
+          font-weight: 300;
+
+          &:hover {
+            color: #dfa871;
+          }
+        }
+
+        .header__link {
+          color: var(--color-blue);
+          border-bottom: 2px solid var(--color-blue);
+          padding-right: 4rem;
+          padding-bottom: 3px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .images {
+    flex-basis: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3;
+    grid-gap: 2rem;
+    position: relative;
+
+    .line {
+      width: 3.2rem;
+      height: 0.5rem;
+      border-radius: 10rem;
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--color-blue);
+
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: 50%;
+        left: -1.5rem;
+        transform: translateY(50%);
+        background-color: #ccc;
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 50%;
+        right: -1.5rem;
+        transform: translateY(50%);
+        background-color: #ccc;
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+      }
+    }
+
+    .img {
+      &:nth-child(2n) {
+        text-align: left;
+      }
+      &:nth-child(2n + 1) {
+        text-align: right;
+      }
+
+      img {
+        width: 85%;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.btn {
+  display: inline-block;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-wave {
+  background-color: var(--color-blue);
+  color: #fff;
+  padding: 1rem 3.5rem;
+  border-radius: 3rem;
+  margin-top: 3rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 255, 0.3);
+  position: relative;
+  padding-left: 6rem;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    mask-image: url("../img/waving-hand.png");
+    -webkit-mask-image: url("../img/waving-hand.png");
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    transform: scale(0.8) translateY(-68%);
+    z-index: 1;
+  }
+}

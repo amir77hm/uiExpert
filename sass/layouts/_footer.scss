@@ -1,0 +1,60 @@
+.footer {
+  .grid-system {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+    justify-items: center;
+
+    .col-1 {
+      position: relative;
+      p {
+      }
+
+      .social {
+        display: flex;
+        align-items: center;
+
+        &__item {
+          background-color: #0a315a;
+          border-radius: 100%;
+          width: 3.6rem;
+          height: 3.6rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 3rem 0;
+
+          &:not(:last-child) {
+            margin-right: 1.6rem;
+          }
+        }
+        img {
+        }
+      }
+
+      .copyRight {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    .col-2,
+    .col-3,
+    .col-4 {
+      .item {
+        &:not(:last-child) {
+          margin-bottom: 2.4rem;
+        }
+      }
+      .link {
+        color: #4b647e;
+        padding: 0.3rem 0.6rem;
+        font-size: 1.4rem;
+        font-family: "Roboto";
+      }
+      .heading {
+        color: #747474;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

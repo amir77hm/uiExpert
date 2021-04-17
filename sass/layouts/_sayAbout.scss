@@ -1,0 +1,150 @@
+.sayAbout {
+  background-color: #0c0f32;
+  padding: 5rem 0;
+  .contain {
+    text-align: center;
+    color: #fff;
+
+    h2 {
+      font-family: "Lato";
+      font-weight: 700;
+      font-size: 3rem;
+    }
+
+    p {
+      font-family: "Roboto";
+    }
+
+    .heading {
+      opacity: 0.5;
+      font-size: 1.3rem;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .center {
+        .img {
+          padding-top: 12rem;
+          margin: 0 auto;
+          width: 25%;
+          position: relative;
+
+          &::after {
+            position: absolute;
+            content: "9.8";
+            bottom: 0;
+            right: 40%;
+            background-color: #ff992e;
+            color: #fff;
+            font-size: 0.8rem;
+            border-radius: 50%;
+            width: 2.2rem;
+            height: 2.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+        .comment {
+          color: #d6d6d6;
+          margin-top: 2rem;
+        }
+        .name {
+          color: #8f8bff;
+          font-size: 1.5rem;
+          margin-top: 1rem;
+        }
+        .position {
+          color: #d6d6d6;
+        }
+      }
+
+      .left,
+      .right {
+        flex-basis: 33.3333;
+        height: 50%;
+        position: relative;
+
+        .img {
+          position: absolute;
+
+          &:nth-child(1) {
+            top: 0;
+            right: 35%;
+            width: 20%;
+
+            img {
+              width: 100%;
+            }
+          }
+          &:nth-child(2) {
+            top: 80%;
+            right: 10%;
+            width: 13%;
+
+            img {
+              width: 100%;
+            }
+          }
+          &:nth-child(3) {
+            top: 150%;
+            right: 60%;
+            width: 15%;
+
+            img {
+              width: 100%;
+            }
+          }
+          &:nth-child(4) {
+            top: 80%;
+            left: 0;
+            width: 8%;
+
+            img {
+              width: 100%;
+            }
+          }
+          &:nth-child(5) {
+            top: 80%;
+            left: 40%;
+            width: 11%;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .hire {
+      border-top: 1px solid rgba($color: #fff, $alpha: 0.05);
+      margin: 0 20rem;
+      padding-top: 4rem;
+      text-align: left;
+      margin-top: 8rem;
+
+      p {
+        font-family: "Roboto";
+        opacity: 0.6;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+          font-size: 2rem;
+          font-family: "Lato";
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.success {
+  text-align: center;
+  margin: 3rem 0;
+
+  h2 {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .header-text {
+    font-family: "Roboto";
+    font-weight: 400;
+    color: #747474;
+    font-size: 1.3rem;
+  }
+  .list-project {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__item {
+      box-shadow: 0 1rem 2rem rgba($color: #000, $alpha: 0.06);
+      padding: 4rem 4rem 2rem 4rem;
+      border-radius: 2rem;
+
+      .box-done {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 1rem;
+        display: inline-block;
+        color: #fff;
+        font-family: "Lato";
+        font-weight: 900;
+        font-size: 1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__1 {
+          background-image: linear-gradient(to bottom, #af94fd, #6651f3);
+          box-shadow: 0 1rem 1.5rem rgba($color: #6651f3, $alpha: 0.4);
+        }
+        &__2 {
+          background-image: linear-gradient(to bottom, #ff95a5, #ff62a3);
+          box-shadow: 0 1rem 1.5rem rgba($color: #ff62a3, $alpha: 0.4);
+        }
+        &__3 {
+          background-image: linear-gradient(to bottom, #fbc9a4, #ff884a);
+          box-shadow: 0 1rem 1.5rem rgba($color: #ff884a, $alpha: 0.4);
+        }
+      }
+      p {
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        color: #4b647e;
+      }
+    }
+  }
+}

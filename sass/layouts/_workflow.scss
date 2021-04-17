@@ -1,0 +1,101 @@
+.workflow {
+  .content {
+    margin: 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .img {
+      width: 50%;
+      margin-left: -4rem;
+      img {
+        width: 100%;
+      }
+    }
+
+    .details {
+      margin-left: 3rem;
+      flex-basis: 42%;
+      h2 {
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 2rem;
+      }
+      &__text {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 1rem;
+        padding-right: 5rem;
+        color: #747474;
+        margin-bottom: 2rem;
+      }
+      .items {
+        &__list {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 1rem;
+        }
+
+        &__item {
+          display: flex;
+          align-items: center;
+          margin: 0.8rem 0;
+
+          &-number {
+            width: 4rem;
+            height: 4rem;
+            color: #fff;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4rem;
+            font-family: "Roboto";
+          }
+
+          &:nth-child(1) .items__item-number {
+            background-color: #3d37f1;
+          }
+          &:nth-child(2) .items__item-number {
+            background-color: #9997df;
+          }
+          &:nth-child(3) .items__item-number {
+            background-color: #ffba3f;
+          }
+          &:nth-child(4) .items__item-number {
+            background-color: #e66e6e;
+          }
+          &:nth-child(5) .items__item-number {
+            background-color: #66659f;
+          }
+          &:nth-child(6) .items__item-number {
+            background-color: #f17637;
+          }
+          &:nth-child(7) .items__item-number {
+            background-color: #37f1be;
+          }
+          &:nth-child(8) .items__item-number {
+            background-color: #f137e5;
+          }
+          &:nth-child(9) .items__item-number {
+            background-color: #f13d37;
+          }
+
+          &-text {
+            margin: 0 1rem 0 2rem;
+            color: #747474;
+
+            h6 {
+              font-size: 1.4rem;
+              font-weight: 400;
+              font-family: "Lato";
+            }
+            p {
+              font-size: 1rem;
+              font-family: "Roboto";
+            }
+          }
+        }
+      }
+    }
+  }
+}

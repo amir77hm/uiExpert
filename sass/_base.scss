@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&family=Poppins&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #ba265d;
+
+  --color-blue: #3d37f1;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-mediumest: 50em; // 800px
+$bp-small: 41.75em; // 668px
+$bp-smallest: 35.5em; // 568px
+$bp-Xsmallest: 28em; // 448px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+  // @media only screen and (max-width: $bp-large) {
+  //   font-size: 50%;
+  // }
+}
+
+body {
+  font-family: "IranSans";
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
